@@ -1,4 +1,6 @@
-# 2025年2月27日 星期四 
+
+
+# 2025年2月27日 星期四 晴天
  ### vscode修改标点符号：
  #### 多光标编辑
  1.ALt+单机（windows/Linux）
@@ -41,6 +43,7 @@ README.md文件配置 项目说明
                 cd monorepo
 初始化           pnpm init -y
                 code .   
+
 ### cd高频技巧
 cd 两层含义：
 第一：Change Directory，切换目录
@@ -58,27 +61,72 @@ cd %USERPROFILE%  # Windows 专用写法
 2.路径补全
 输入 cd D → 按 Tab 键自动补全路径（支持多级目录）
 
+### github克隆与初始化仓库操作指南
+1.克隆仓库（jit clone）
+···
+git clone <repository>
+···
+2.初始化仓库（jit init）
+···
+git init
+git add .
+git commit -m "first commit"
+···
+3.创建分支（jit branch）
+···
+git branch <branch-name>
+git checkout <branch-name>
+···
+4.推送分支（jit push）
+···
+git push origin <branch-name>
+···
+5.创建远程仓库（jit remote）
+···
+git remote add origin <repository>
+···
+6.拉取远程分支（jit pull）
+···
+git pull origin <branch-name>
+···
+7.创建标签（jit tag）
+···
+git tag <tag-name>
+git push origin <tag-name>
+···
+8.删除远程分支（jit push）
+···
+git push origin --delete <branch-name>
+···
+9.删除本地分支（jit branch）
+···
+git branch -d <branch-name>
+···
+10.删除远程标签（jit tag）
+···
+git push origin --delete <tag-name>
+···
+11.删除本地标签（jit tag）
+···
+git tag -d <tag-name>
+···
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+### 今日总结
+- 学习了vscode的多光标编辑、批量查找替换、快速生成Vue组件的方法。
+- 掌握了Vue组件的核心概念，包括属性、插槽、事件。
+- 了解了双向数据绑定和单向数据绑定数据流不冲突。
+- 掌握了Vue组件的语法糖。
+- 了解了虚拟DOM匹配的算法机制。
+- 了解了数据驱动。
+- git克隆与初始化仓库操作指南。
 
 
 
 
 # 2025年2月26日 星期三 雨天
 
-# 工作总结
+### 工作总结
 已经在公司实习两周了，虽然还没有完全融入到公司的氛围，但也算是有了一定的工作经验。Vue基础知识与实例小项目已经完成。现在进入Vue项目实战阶段，准备按照项目流程一步步完成。今年进公司时有点不适应，但相信在公司好好提升自己的技能一定会带来收获，加油！
 
 #### 学习计划
@@ -126,7 +174,6 @@ vscode快捷键：
 
 
 -->
-
 
 # 2025年2月25日 星期二 雨天
 

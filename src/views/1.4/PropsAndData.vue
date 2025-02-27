@@ -5,7 +5,7 @@
         <p>props.list:{{ list }}</p>
         <p>props.a:{{ a }}</p>
         <p>
-            <button @click="handleBChande">change data.b</button>
+            <button @click="handleBChange">change data.b</button>
         </p>
     </div>
 </template>
@@ -20,16 +20,15 @@ export default {
   data() {
     return {
         a:"hello",
-        b:"world"
     };
 },
 updated(){
     console.log("触发 PropsAndData 更新");
 },
 methods: {
-    handleBChande() {
+    handleBChange() {
         this.b = "vue" + Date.now();
         console.log("data.b 发生了变化，但并没有触发组件更新",this.b);
     }
-};
+}
 </script>
