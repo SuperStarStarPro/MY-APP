@@ -23,9 +23,48 @@
 ···
 输入'vbase',然后按Tab键，即可生成一个完整基础Vue组件模板。
 ···
-
+src下：
 assests：静态资源，一般放图片
-components：组件，
+components：组件，公共组件（解耦）--- 一个东西到处用，可以省着重复去写了
+router：路由 vue-router
+store：状态管理 vuex
+views：页面，页面组件（解耦）
+App.vue：根组件，入口文件，渲染其他组件
+main.js：入口文件，渲染根组件App.vue
+
+.gitignore文件配置 忽略文件
+babel.config.js文件配置 babel：做兼容的，它可以把es6以及之后的代码转为es5，支持绝大多数浏览器。
+package.json文件配置 依赖包
+README.md文件配置 项目说明
+
+新创建一个文件夹 mkdir monorepo(文件夹名称)
+                cd monorepo
+初始化           pnpm init -y
+                code .   
+### cd高频技巧
+cd 两层含义：
+第一：Change Directory，切换目录
+第二：Compact Dise 光盘，压缩碟，表示压缩文件。
+
+可以通过cd ~回到用户主目录，或者cd -返回上一个目录。例：
+C:\Users\YourName>cd Desktop
+cd C:\Users\YourName\Desktop	进入指定绝对路径
+
+1.快速回家
+···
+cd ~       # Linux/macOS 直接返回用户主目录
+cd %USERPROFILE%  # Windows 专用写法
+···
+2.路径补全
+输入 cd D → 按 Tab 键自动补全路径（支持多级目录）
+
+
+
+
+
+
+
+
 
 
 
