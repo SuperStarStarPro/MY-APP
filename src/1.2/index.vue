@@ -1,34 +1,37 @@
 <template>
     <div>
-        <PersonalInfo v-model="phoneInfo" :zip-code.sync="zipCode" />
+        <PersonalInfo v-model="phoneInfo" :zip-code.sync="zipCode" @error="handleError" />
         
-        <PersonalInfo
-        :phone-info="phoneInfo"
-        :zip-code="zipCode"
-        @change="val => (phoneInfo = val)"
-        @updata:ZipCode="val => (zipCode = val)" 
-        />
-
         phoneInfo: {{ phoneInfo }}
         <br/>
-        zipCode:{{ zipCode }}
+        zipCode: {{ zipCode }}
     </div>
 </template>
+
+
 <script>
-import PersonalInfo from './PersonalInfo.vue'
+import PersonalInfo from './PersonalInfo.vue';
+
 export default {
     components: {
         PersonalInfo
     },
     data() {
         return {
-            phoneInfo:{
-                areaCode:"+86",
-                phone:""
+            phoneInfo: {
+                areaCode: "+86",
+                phone: ""
             },
-            zipCode:""
+            zipCode: "",
+            error: null
         };
+    },
+    methods: {
+        handleError(err) {
+            this.error = err;
+            // 这里可以增加更多的错误处理逻辑,比如显示错误提示给用户
+            console.error('Error from PersonalInfo component:', err);
+        }
     }
 };
-
 </script>
