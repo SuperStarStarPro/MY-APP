@@ -26,25 +26,25 @@
 输入'vbase',然后按Tab键，即可生成一个完整基础Vue组件模板。
 ```
 ### src下：
-assests：静态资源，一般放图片\
+assests：静态资源，一般放图片
 
-components：组件，公共组件（解耦）--- 一个东西到处用，可以省着重复去写了\
+components：组件，公共组件（解耦）--- 一个东西到处用，可以省着重复去写了
 
-router：路由 vue-router\
+router：路由 vue-router
 
-store：状态管理 vuex\
+store：状态管理 vuex
 
-views：页面，页面组件（解耦）\
+views：页面，页面组件（解耦）
 
-App.vue：根组件，入口文件，渲染其他组件\
+App.vue：根组件，入口文件，渲染其他组件
 
 main.js：入口文件，渲染根组件App.vue
 
-.gitignore文件配置 忽略文件\
+.gitignore文件配置 忽略文件
 
-babel.config.js文件配置 babel：做兼容的，它可以把es6以及之后的代码转为es5，支持绝大多数浏览器。\
+babel.config.js文件配置 babel：做兼容的，它可以把es6以及之后的代码转为es5，支持绝大多数浏览器。
 
-package.json文件配置 依赖包\
+package.json文件配置 依赖包
 
 README.md文件配置 项目说明
 
@@ -56,11 +56,11 @@ README.md文件配置 项目说明
 ### cd高频技巧
 cd 两层含义：\
 第一：Change Directory，切换目录\
-第二：Compact Dise 光盘，压缩碟，表示压缩文件。\
+第二：Compact Dise 光盘，压缩碟，表示压缩文件。
 
 可以通过cd ~回到用户主目录，或者cd -返回上一个目录。例：\
 C:\Users\YourName>cd Desktop\
-cd C:\Users\YourName\Desktop	进入指定绝对路径\
+cd C:\Users\YourName\Desktop	进入指定绝对路径
 
 1.快速回家
 ```
@@ -92,7 +92,7 @@ git push origin <branch-name>
 ```
 
 
-2.初始化仓库（jit init）\
+2.初始化仓库（jit init）
 
 ```
 git init
@@ -100,14 +100,14 @@ git add .
 git commit -m "first commit"
 ```
 
-3.创建分支（jit branch）\
+3.创建分支（jit branch）
 
 ```
 git branch <branch-name>
 git checkout <branch-name>
 ```
 
-4.推送分支（jit push）\
+4.推送分支（jit push）
 
 ```
 git push origin <branch-name>
@@ -117,38 +117,38 @@ git push origin <branch-name>
 git remote add origin <repository>
 ```
 
-5.拉取远程分支（jit pull）\
+5.拉取远程分支（jit pull）
 
 ```
 git pull origin <branch-name>
 ```
 
-6.创建标签（jit tag）\
+6.创建标签（jit tag）
 
 ```
 git tag <tag-name>
 git push origin <tag-name>
 ```
 
-7.删除远程分支（jit push）\
+7.删除远程分支（jit push）
 
 ```
 git push origin --delete <branch-name>
 ```
 
-8.删除本地分支（jit branch）\
+8.删除本地分支（jit branch）
 
 ```
 git branch -d <branch-name>
 ```
 
-9.删除远程标签（jit tag）\
+9.删除远程标签（jit tag）
 
 ```
 git push origin --delete <tag-name>
 ```
 
-10.删除本地标签（jit tag）\
+10.删除本地标签（jit tag）
 
 ```
 git tag -d <tag-name>
