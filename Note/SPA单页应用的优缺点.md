@@ -1,4 +1,5 @@
-Single Page Web Application是一种特殊的web应用,所有的活动局限于一个web页面中,仅在该web页面初始化时加载
+### Single Page Web Application
+一种特殊的web应用,所有的活动局限于一个web页面中,仅在该web页面初始化时加载
 相应的HTML、JavaScript、CSS文件,一旦页面加载完成,SPA不会进行页面的重新加载或跳转,而是利用JavaScript动态
 的变换HTML,默认Hash模式是采用锚点实现路由以及元素组件的显示与隐藏实现交互,简单来说SPA应用始终在一个页面中,
 默认Hash模式是通过锚点实现路由以及控件组件的显示与隐藏来实现类似于页面跳转的交互。
