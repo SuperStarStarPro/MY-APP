@@ -17,26 +17,35 @@
 
  ### 快速生成Vue组件的方法
  Emmet在.vue文件中的支持情况，\
-1.Emmet 缩写（推荐原生方式）\
+1.Emmet 缩写（推荐原生方式）
 ```
 输入'vue'，然后按Tab键，即可生成一个Vue组件模板。
 ```
-2.Vetur 插件（官方推荐插件）\
+2.Vetur 插件（官方推荐插件）
 ```
 输入'vbase',然后按Tab键，即可生成一个完整基础Vue组件模板。
 ```
-src下：\
+### src下：
 assests：静态资源，一般放图片\
+
 components：组件，公共组件（解耦）--- 一个东西到处用，可以省着重复去写了\
+
 router：路由 vue-router\
+
 store：状态管理 vuex\
+
 views：页面，页面组件（解耦）\
+
 App.vue：根组件，入口文件，渲染其他组件\
+
 main.js：入口文件，渲染根组件App.vue
 
 .gitignore文件配置 忽略文件\
+
 babel.config.js文件配置 babel：做兼容的，它可以把es6以及之后的代码转为es5，支持绝大多数浏览器。\
+
 package.json文件配置 依赖包\
+
 README.md文件配置 项目说明
 
 新创建一个文件夹 mkdir monorepo(文件夹名称)
@@ -45,92 +54,105 @@ README.md文件配置 项目说明
                 code .   
 
 ### cd高频技巧
-cd 两层含义：
-第一：Change Directory，切换目录
-第二：Compact Dise 光盘，压缩碟，表示压缩文件。
+cd 两层含义：\
+第一：Change Directory，切换目录\
+第二：Compact Dise 光盘，压缩碟，表示压缩文件。\
 
-可以通过cd ~回到用户主目录，或者cd -返回上一个目录。例：
-C:\Users\YourName>cd Desktop
-cd C:\Users\YourName\Desktop	进入指定绝对路径
+可以通过cd ~回到用户主目录，或者cd -返回上一个目录。例：\
+C:\Users\YourName>cd Desktop\
+cd C:\Users\YourName\Desktop	进入指定绝对路径\
 
 1.快速回家
-···
+```
 cd ~       # Linux/macOS 直接返回用户主目录
 cd %USERPROFILE%  # Windows 专用写法
-···
+```
 2.路径补全
+
 输入 cd D → 按 Tab 键自动补全路径（支持多级目录）
 
 ### github克隆与初始化仓库操作指南
-1.克隆仓库（jit clone）\
-···
+```
 git clone <repository>
-···
+```
 
-2.初始化仓库（jit init）\
-
-···
+```
 git init
 git add .
 git commit -m "first commit"
-···
+```
+
+```
+git branch <branch-name>
+git checkout <branch-name>
+```
+
+```
+git push origin <branch-name>
+```
+
+
+2.初始化仓库（jit init）\
+
+```
+git init
+git add .
+git commit -m "first commit"
+```
 
 3.创建分支（jit branch）\
 
-···
+```
 git branch <branch-name>
 git checkout <branch-name>
-···
+```
 
 4.推送分支（jit push）\
 
-···
+```
 git push origin <branch-name>
-···
+```
 
-5.创建远程仓库（jit remote）\
-
-···
+```
 git remote add origin <repository>
-···
+```
 
-6.拉取远程分支（jit pull）\
+5.拉取远程分支（jit pull）\
 
-···
+```
 git pull origin <branch-name>
-···
+```
 
-7.创建标签（jit tag）\
+6.创建标签（jit tag）\
 
-···
+```
 git tag <tag-name>
 git push origin <tag-name>
-···
+```
 
-8.删除远程分支（jit push）\
+7.删除远程分支（jit push）\
 
-···
+```
 git push origin --delete <branch-name>
-···
+```
 
-9.删除本地分支（jit branch）\
+8.删除本地分支（jit branch）\
 
-···
+```
 git branch -d <branch-name>
-···
+```
 
-10.删除远程标签（jit tag）\
+9.删除远程标签（jit tag）\
 
-···
+```
 git push origin --delete <tag-name>
-···
+```
 
-11.删除本地标签（jit tag）\
+10.删除本地标签（jit tag）\
 
-···
+```
 git tag -d <tag-name>
-···
-
+```
 
 ## 今日总结
 - 学习了vscode的多光标编辑、批量查找替换、快速生成Vue组件的方法。
