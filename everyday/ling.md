@@ -4,34 +4,34 @@
 # 2025年2月28日 星期五 晴天
 ## 学习计划
 - 昨日：
-上午：整理笔记，拓展Vscode操作，总结vue目录知识，整理github文件操作流程。
-下午：修改Vue项目小demo的BUG，观看视频教学。
+上午：整理笔记，拓展`Vscode`操作，总结`vue`目录知识，整理`github`文件操作流程。
+下午：修改`Vue`项目小demo的BUG，观看视频教学。
 
 - 今日：
-上午：整理md笔记内容，总结课后习题，三个Vue知识点。
+上午：整理`md`笔记内容，总结课后习题，三个`Vue`知识点。
 
-监听器wacth
+监听器`wacth`
 - 更加灵活、通用
-- watch中可以执行任何逻辑，如函数节流，Ajax异步获取数据，甚至操作DOM
+- `watch`中可以执行任何逻辑，如函数节流，`Ajax`异步获取数据，甚至操作`DOM`
 
-computed vs watch
-- computed能做的，watch都能做，反之则不行
-- 能用Computed的尽量用Computed，能用Watch的尽量用Watch
+`computed` vs `watch`
+- `computed`能做的，`watch`都能做，反之则不行
+- 能用`Computed`的尽量用`Computed`，能用`Watch`的尽量用`Watch`
 
-v-html:将一个字符串解析为html标签渲染到模板中，主要用来渲染文本内容，并且存在xss攻击风险。
-v-text：将数据绑定到模板中，替换目标文件内容，防止xss攻击，html转义
+`v-html`:将一个字符串解析为`html`标签渲染到模板中，主要用来渲染文本内容，并且存在`xss`攻击风险。
+`v-text`：将数据绑定到模板中，替换目标文件内容，防止`xss`攻击，`html`转义
 
-input：输入事件
-    blur：失去焦点时触发
-    focus：获得焦点时触发
-    input：输入内容时触发
+`input`：输入事件
+    `blur`：失去焦点时触发
+    `focus`：获得焦点时触发
+    `input`：输入内容时触发
 
 ```
 handleBlur(){
   console.log('失去焦点')
 }
 ```
-
+```
     v-model：双向数据绑定，将数据双向绑定到输入框和数据，数据发生变化时，输入框也会发生变化。
     v-if：条件渲染，根据表达式的值，决定是否渲染元素。
     v-show：根据表达式的值，切换元素的display属性，显示或隐藏。
@@ -41,26 +41,29 @@ handleBlur(){
     v-cloak：延迟显示，在数据渲染完成之前，隐藏元素。
     v-pre：跳过元素和子元素的编译过程，提升渲染性能。
     v-once：只渲染元素一次，数据变化时不会重新渲染。
+```
 
-js中，定义变量的三种方式
+`js`中，定义变量的三种方式
+```
 1.var
 2.let
 3.const 
-
-v-for中key值，跟vue的虚拟DOM有关
-vue2和vue3的生命周期钩子是不同的。
-views是用来存放页面的，
+```
+`v-for`中`key`值，跟`vue`的虚拟`DOM`有关
+`vue2`和`vue3`的生命周期钩子是不同的。
+`views`是用来存放页面的，
 @是路径别名 
-在app.vue中对views中的vue文件进行传值操作.
+在`app.vue`中对`views`中的`vue`文件进行传值操作.
 
 
-1.父组件向子组件进行传值：Propse
+1.父组件向子组件进行传值：`Propse`
+```
 （1）:msg="message"
  (2) message:"这是APP.vue父组件的值"，
+```
+子组件向父组件进行传值：`$emit`  
 
-子组件向父组件进行传值：$emit  
-
-2.子组件向父组件进行传值：emit（自定义事件）
+2.子组件向父组件进行传值：`emit`（自定义事件）
 
 
 
@@ -95,51 +98,51 @@ views是用来存放页面的，
 - 依赖固定的数据类型（响应式数据）
 
  ### 快速生成Vue组件的方法
- Emmet在.vue文件中的支持情况，\
-1.Emmet 缩写（推荐原生方式）
+ `Emmet`在.vue文件中的支持情况，\
+1.`Emmet` 缩写（推荐原生方式）
 ```
-输入'vue'，然后按Tab键，即可生成一个Vue组件模板。
+输入`vue`，然后按Tab键，即可生成一个Vue组件模板。
 ```
-2.Vetur 插件（官方推荐插件）
+2.`Vetur `插件（官方推荐插件）
 ```
-输入'vbase',然后按Tab键，即可生成一个完整基础Vue组件模板。
+输入`vbase`,然后按Tab键，即可生成一个完整基础`Vue`组件模板。
 ```
 ### src下：
-assests：静态资源，一般放图片
+`assests`：静态资源，一般放图片
 
-components：组件，公共组件（解耦）--- 一个东西到处用，可以省着重复去写了
+`components`：组件，公共组件（解耦）--- 一个东西到处用，可以省着重复去写了
 
-router：路由 vue-router
+`router`：路由 vue-router
 
-store：状态管理 vuex
+`store`：状态管理 vuex
 
-views：页面，页面组件（解耦）
+`views`：页面，页面组件（解耦）
 
-App.vue：根组件，入口文件，渲染其他组件
+`App.vue`：根组件，入口文件，渲染其他组件
 
-main.js：入口文件，渲染根组件App.vue
+`main.js`：入口文件，渲染根组件App.vue
 
-.gitignore文件配置 忽略文件
+`.gitignore`文件配置 忽略文件
 
-babel.config.js文件配置 babel：做兼容的，它可以把es6以及之后的代码转为es5，支持绝大多数浏览器。
+`babel.config.js`文件配置 `babel`：做兼容的，它可以把es6以及之后的代码转为es5，支持绝大多数浏览器。
 
-package.json文件配置 依赖包
+`package.json`文件配置 依赖包
 
-README.md文件配置 项目说明
+`README.md`文件配置 项目说明
 
-新创建一个文件夹 mkdir monorepo(文件夹名称)
-                cd monorepo
-初始化           pnpm init -y
-                code .   
+新创建一个文件夹 `mkdir monorepo`(文件夹名称)
+                `cd monorepo`
+初始化           `pnpm init -y`
+                `code .`
 
 ### cd高频技巧
-cd 两层含义：\
-第一：Change Directory，切换目录\
-第二：Compact Dise 光盘，压缩碟，表示压缩文件。
+`cd `两层含义：\
+第一：`Change Directory`，切换目录\
+第二：`Compact Dise` 光盘，压缩碟，表示压缩文件。
 
-可以通过cd ~回到用户主目录，或者cd -返回上一个目录。例：\
-C:\Users\YourName>cd Desktop\
-cd C:\Users\YourName\Desktop	进入指定绝对路径
+可以通过cd ~回到用户主目录，或者`cd` -返回上一个目录。例：\
+`C:\Users\YourName>cd Desktop\`
+`cd C:\Users\YourName\Desktop	`进入指定绝对路径
 
 1.快速回家
 ```
@@ -300,9 +303,9 @@ git tag -d <tag-name>
 
 ## 学习计划  
 
-- 继续学习Vue知识，进行公司培训项目搭建，熟悉Vue项目开发流程。
+- 继续学习`Vue`知识，进行公司培训项目搭建，熟悉`Vue`项目开发流程。
 ### Vue组件的核心概念（一）
-插件Vetur，ESlint\
+插件`Vetur`，`ESlint`\
 - 自定义属性props,props中声明的属性\
 - 原生属性attrs 没有声明的属性，默认自动挂载到组件根元素上，设置inheriAtts为false可以关闭自动挂载\
 - 特殊属性class，style 挂载到组件根元素上，支持字符串，对象，数组等多种语法
