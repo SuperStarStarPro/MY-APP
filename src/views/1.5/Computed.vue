@@ -30,7 +30,7 @@
             },
             now:function() {
                 console.log("执行now计算属性");
-                return new Date().toLocaleString();
+                return Date.now();
             }
         },  
         methods: {

@@ -16,6 +16,7 @@ export default {
     components: {
         PersonalInfo
     },
+    //定义数据
     data() {
         return {
             phoneInfo: {
@@ -26,6 +27,7 @@ export default {
             error: null
         };
     },
+    //定义方法
     methods: {
         handleError(err) {
             this.error = err;
