@@ -12,7 +12,7 @@
     对`Watch1 Demo`进行防抖改造，即直到用户停止输入`500ms`才更新我们的`fullname`
 
 13.生命周期的应用场景和函数式组件\
-- `beforeUpfata:`依赖数据改变或`$forceUpdata`强制刷新，移除已经添加的事件监听器等<b>万万不可更改依赖数据</b>。
+- `beforeUpData:`依赖数据改变或`$forceUpdata`强制刷新，移除已经添加的事件监听器等<b>万万不可更改依赖数据</b>。
 - `upfated`:操作DOM添加事件监听器等<b>万万不可更改依赖数据</b>
 - `beforeDestroy`:销毁组件前，移除事件监听器等
 函数式组件：\
