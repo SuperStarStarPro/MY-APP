@@ -1,0 +1,18 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 横排五个方块 -->
+  <rect x="20" y="50" width="500" height="40" fill="#2196F3" />
+  <rect x="80" y="50" width="500" height="40" fill="#2196F3" />
+  <rect x="140" y="50" width="500" height="40" fill="#2196F3" />
+  <rect x="200" y="50" width="500" height="40" fill="#2196F3" />
+  <rect x="260" y="50" width="500" height="40" fill="#2196F3" />
+
+  <!-- 竖排四个方块 -->
+  <rect x="140" y="80" width="40" height="100" fill="#2196F3" />
+  <rect x="140" y="140" width="40" height="60" fill="#2196F3" />
+  <rect x="140" y="200" width="40" height="60" fill="#2196F3" />
+  <rect x="140" y="260" width="40" height="40" fill="#2196F3" />
+
+  <!-- 左右下方各添加一个方块 -->
+  <rect x="20" y="90" width="40" height="40" fill="#2196F3" />
+  <rect x="260" y="90" width="40" height="40" fill="#2196F3" />
+</svg>

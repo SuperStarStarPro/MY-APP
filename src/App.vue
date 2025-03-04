@@ -1,11 +1,28 @@
 <!-- 模版 -->
 <template>
   <div id="app">
+
+
+    <img alt="Vue logo" src="./assets/logo.png">
+
+<!-- 组件中添加路由视图 -->
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view> </router-view> <!-- 显示匹配的组件 -->
+
+
     {{msg}}
+
+<!-- 组件中添加路由视图 -->
     <div>
       <input type="text" v-model="info">
       <button v-on:click="handleClick">添加</button>
+
     </div>
+
+
     <ul>
       <todo-item v-for="item in list" :key="item">
         <template v-slot:item="itemProps">
@@ -13,17 +30,18 @@
       </template>
       </todo-item>
     </ul>
+
   </div>
 </template>
 
 <!--逻辑 -->
 <script>
-import TodoItem from './components/TodoItem.vue'
+import TimeDemo from './components/TimeDemo.vue'
 
 export default {
   name: 'App',
   components: {//注册组件
-    TodoItem
+    TimeDemo,
   },
   data() {
     return {
@@ -39,9 +57,12 @@ export default {
       this.info = ''
     }
   },
-
 }
 </script>
+
+
+
+
 
 <!--逻辑 -->
 <style>
