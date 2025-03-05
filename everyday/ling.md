@@ -1,3 +1,31 @@
+# 2025年3月5日 星期三 雨天
+## 学习计划
+今日：\
+上午：\
+- Array(数组类型)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 2025年3月4日 星期二 雨天
 ## 学习计划
 今日：\
@@ -6,11 +34,8 @@
 下午：\
   习题回顾，Vue项目实战55/19
 
-
-上午：
-- 整理md笔记,阅读mdn文档,通过mdn网页,了解Javascript标准内置对象Object对象函数
     
-## 知识点
+## 知识点s
  ### 16.获取夸层级组件实例（拒绝递归）
  ref引用信息
 ```
@@ -49,8 +74,11 @@ template
 ### But 语法糖
 <span> Message: {{ msg }}</span>编译成createElement("span","Message: ${{ this.msg }}")
 
+ `components`里存放公共组件，比如`header`、`footer`、`sidebar`等。
+ `store`里存放全局状态管理，比如用户信息、`token`等。`utils`里存放一些工具函数，比如时间格式化、加密解密等。
+ `App.vue`是入口文件，主要负责渲染路由和全局状态管理。在`componoents`中创建了文件，需要在`App.vue`中引入，注册。
 
-
+Array是数组型
 
 
 
@@ -109,9 +137,9 @@ template
 ## 知识点：
 
 13.生命周期的应用场景和函数式组件
-- `beforeUpfata:`依赖数据改变或`$forceUpdata`强制刷新，移除已经添加的事件监听器等<b>万万不可更改依赖数据</b>。
-- `upfated`:操作DOM添加事件监听器等<b>万万不可更改依赖数据</b>
-- `beforeDestroy`:销毁组件前，移除事件监听器等
+- ` beforeUpdate:`依赖数据改变或`$forceUpdata`强制刷新，移除已经添加的事件监听器等<b>万万不可更改依赖数据</b>。
+- `updated`:操作DOM添加事件监听器等<b>万万不可更改依赖数据</b>
+- `beforeDestroy (Vue2)`:销毁组件前，移除事件监听器等
 函数式组件：
 - `functional: true`
 - 无状态，无实例，没有`this`上下文，无生命周期
