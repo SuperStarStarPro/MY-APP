@@ -8,6 +8,8 @@
   <script>
   export default {
     // 可以在这里引入其他组件
+    components: {
+      } 
   }
   </script>
   
