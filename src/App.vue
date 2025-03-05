@@ -7,8 +7,11 @@
 
 <!-- 组件中添加路由视图 -->
     <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/BigProps">BigProps</router-link>
+      <router-link to="/Event">Event</router-link>
+      <router-link to="/index">index</router-link>
+      <router-link to="/Props">Props</router-link>
+      <router-link to="/Slot">Slot</router-link>
     </nav>
     <router-view> </router-view> <!-- 显示匹配的组件 -->
 
@@ -40,8 +43,9 @@ import TimeDemo from './components/TimeDemo.vue'
 
 export default {
   name: 'App',
-  components: {//注册组件
-    TimeDemo,
+  components: {
+    TimeDemo, // 注册组件
+  }
   },
   data() {
     return {
