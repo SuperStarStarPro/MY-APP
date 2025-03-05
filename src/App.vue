@@ -41,10 +41,12 @@
 <script>
 import TimeDemo from './components/TimeDemo.vue'
 
+
 export default {
   name: 'App',
   components: {
     TimeDemo, // 注册组件
+    
   }
   },
   data() {
