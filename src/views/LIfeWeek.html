@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue生命周期和指令周期钩子顺序</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <script>
+        // 自定义指令
+        Vue.directive('demo', {
+            bind: function (el, binding, vnode) {
+                console.log('指令 bind 钩子');
+            },
+            inserted: function (el, binding, vnode) {
+                console.log('指令 inserted 钩子');
+            },
+            update: function (el, binding, vnode, oldVnode) {
+                console.log('指令 update 钩子');
+            },
+            componentUpdated: function (el, binding, vnode, oldVnode) {
+                console.log('指令 componentUpdated 钩子');
+            },
+            unbind: function (el, binding, vnode) {
+                console.log('指令 unbind 钩子');
+            }
+        });
+
+        // 创建Vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                message: '查看生命周期和指令周期钩子的顺序'
+            },
+            directives: {
+                demo: {
+                    bind: function (el, binding, vnode) {
+                        console.log('局部指令 bind 钩子');
+                    },
+                    inserted: function (el, binding, vnode) {
+                        console.log('局部指令 inserted 钩子');
+                    },
+                    update: function (el, binding, vnode, oldVnode) {
+                        console.log('局部指令 update 钩子');
+                    },
+                    componentUpdated: function (el, binding, vnode, oldVnode) {
+                        console.log('局部指令 componentUpdated 钩子');
+                    },
+                    unbind: function (el, binding, vnode) {
+                        console.log('局部指令 unbind 钩子');
+                    }
+                }
+            },
+            beforeCreate: function () {
+                console.log('beforeCreate 钩子');
+            },
+            created: function () {
+                console.log('created 钩子');
+            },
+            beforeMount: function () {
+                console.log('beforeMount 钩子');
+            },
+            mounted: function () {
+                console.log('mounted 钩子');
+            },
+            beforeUpdate: function () {
+                console.log('beforeUpdate 钩子');
+            },
+            updated: function () {
+                console.log('updated 钩子');
+            },
+            beforeDestroy: function () {
+                console.log('beforeDestroy 钩子');
+            },
+            destroyed: function () {
+                console.log('destroyed 钩子');
+            }
+        });
+    </script>
+</body>
+</html>

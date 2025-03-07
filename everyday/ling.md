@@ -1,3 +1,28 @@
+# 2025 年 3 月 7 号 星期五 雨天
+
+## 学习计划
+
+昨日：\
+阅读 Vuex 底层逻辑原理，继续完善所创建的新项目(vuex-demo1)，VueRouter 的使用，了解 Vue 的生命周期 168/129。Vue 路由层级包含，Views 单页面组件管理，main.js 文件引用，App 与 Router 的使用。
+项目搭建视频教学 55/22，习题归纳整理好好工作！
+今日：\
+上午：
+整理 19-20，归纳 20-21 习题。
+下午：
+Vue 项目开发实战进度 22/55.创建项目 demo2，购物车，使用五个核心项目，五个底层原理。
+
+## 知识点：
+
+23.购物车
+
+- 开启命名空间 namespaced:true
+- 嵌套模块不要过深，尽量扁平化
+- 灵活应用 creatNamespacedHelpers
+
+习题：扩展购物车，提供单次添加 1-N 的数量到购物车的功能
+
+Vuex 状态管理的核心是 state，它是一个对象，包含应用的所有状态。Vuex 的 getters 可以让我们从 store 中派生出状态，Vuex 的 actions 可以让我们提交 mutation，Vuex 的 mutations 可以让我们修改 state。Vuex 的插件可以让我们拦截和处理 mutation，Vuex 的辅助函数可以让我们编写业务逻辑。Vuex 是一个专门为 Vue.js 设计的状态管理模式。
+
 # 2025 年 3 月 6 号 星期四 晴天
 
 昨日：\
@@ -7,6 +32,20 @@
 今日：\
 
 - 继续攻克 Vue 知识。
+  状态管理 store，Vuex。
+  状态管理文件是指 Vuex 的配置文件，即 store.js 和 index.js。在这个文件中通常定义了应用的状态（state）、获取的状态方法（getters）、修改状态的方法（mutations）以及异步操作（actions）。
+
+dispatch 是用来触发一个 action 的方法。
+
+## $store 是如何挂载到到实例 this 上的？
+
+## 扩展简化的 Vuex-min，实现 getters，并实现 vuex 的方式注入$store.
+
+disspatch
+
+在你的代码示例中，doubleCount 是一个 getter，它从 store 中获取 count 的值并返回其两倍。这样可以在模板中方便地访问这个计算后的值，而不需要在组件中重复计算逻辑。
+
+Vue 构建最流行是 Vue CLI，也可以用 Webpack、Vite 等。
 
 # 2025 年 3 月 5 日 星期三 雨天
 
